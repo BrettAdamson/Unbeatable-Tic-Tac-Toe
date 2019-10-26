@@ -19,7 +19,7 @@ public class Board {
     //Instance Methods
 
     public void printBoard() {
-        System.out.println("   0   1   2");
+        System.out.println("   0   1   2 ");
         System.out.println("  --- --- ---");
         System.out.println(String.format("0| %s | %s | %s |", board[0][0], board[0][1], board[0][2]));
         System.out.println(String.format("1| %s | %s | %s |", board[1][0], board[1][1], board[1][2]));

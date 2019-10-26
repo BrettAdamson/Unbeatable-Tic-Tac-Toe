@@ -31,13 +31,14 @@ public class Game {
             boolean invalidMove = true;
 
             while(invalidMove){//The user can only choose spots that have not already been taken
-                System.out.print("Please choose a X coordinate: ");
-                int xCord = validInput(input);
 
                 System.out.print("Please choose a Y coordinate: ");
-                int yCord = validInput(input);
+                int row = validInput(input);
 
-                if(board.placeMove(xCord,yCord,user.getSymbol())){
+                System.out.print("Please choose a X coordinate: ");
+                int col = validInput(input);
+
+                if(board.placeMove(row,col,user.getSymbol())){
                    invalidMove = false;
                 }
             }
